@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_zxing).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this, CaptureActivity.class);
-                startActivityForResult(intent,Constants.CODE_REQUEST);
-
+                Intent intent = new Intent(MainActivity.this, CaptureActivity.class);
+                startActivityForResult(intent, Constants.CODE_REQUEST);
+                Toast.makeText(MainActivity.this, "234", Toast.LENGTH_SHORT).show();
             }
         });
     }
